@@ -1,0 +1,218 @@
+.breadcrumbs
+	padding 0px 12px
+	overflow hidden
+	white-space: nowrap
+	background #1270a7
+	position relative
+	height 40px
+	&__link
+		display block
+		float left
+		margin-right 30px
+		white-space: nowrap
+		text-overflow ellipsis
+		color #FFF
+		position relative
+		height 40px
+		line-height 40px
+		&:before
+			content ''
+			display block
+			position absolute
+			top 6px
+			right -17px
+			width 26px
+			height 26px
+			border-right 1px solid #fff
+			border-top 1px solid #fff
+			transform rotate(45deg)
+			opacity 0.8
+		a
+			color #fff
+			text-decoration underline
+			height 40px
+			line-height 40px
+	&__link:last-child:before
+		content ''
+		display none
+	&__link--home, &__link--back
+		text-indent -10000px
+		width 30px
+		position relative
+		margin-right 10px
+		z-index 1
+		&:before
+			content ''
+			display none
+		a
+			position relative
+			display block
+			z-index 1
+			&:after
+				content ''
+				display block
+				position absolute
+				top 9px
+				retinaSprite($home_ico_group)
+	&__link--back a
+		&:after
+			content ''
+			display block
+			position absolute
+			retinaSprite($back_ico_bread_group)
+// Top PAge TITLE
+.page-title
+	background #eff1f2
+	padding 10px 12px
+	font-size 16px
+	text-transform uppercase
+	font-weight bold
+	border-top 1px solid #cbcecf
+	border-bottom 1px solid #cbcecf
+	position relative
+	&--with_sidebar
+		padding-right: 40px
+	a.back_page
+		width 100%
+		height 100%
+		position absolute
+		left 0
+		top 0
+		display block
+		&:before
+			content ''
+			display block
+			position absolute
+			left 12px
+			top 11px
+			retinaSprite($back_ico_page_group)
+	&__subtitle
+		font-size 12px
+		text-transform inherit
+		font-weight normal
+	a.sidebar-link
+		display block
+		position: absolute
+		right 12px
+		top 10px
+		retinaSprite($filter_ico_group)
+// convenience BLOCK
+.convenience
+	position relative
+	@media screen and (min-width: 550px)
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
+		justify-content: space-between
+		align-items: stretch
+		align-content: stretch
+	&__item
+		padding 10px 15px 10px 70px
+		border-bottom 1px solid #cbcecf
+		position relative
+		box-sizing border-box
+		min-height 70px
+		color #000
+		@media screen and (min-width: 550px)
+			padding-left 15px
+			padding-top 70px
+			text-align center
+		&:before
+			content ''
+			display block
+			border-radius 100%
+			position absolute
+			left 10px
+			@media screen and (min-width: 550px)
+				left 50%
+				margin-left -25px
+				top 10px
+		&--con1:before
+			retinaSprite($convience1_group)
+		&--con2:before
+			retinaSprite($convience2_group)
+		&--con3:before
+			retinaSprite($convience3_group)
+		b
+			text-transform uppercase
+			font-size 13px
+// Text Block
+.text-block
+	border-bottom 1px solid #cbcecf
+	&__title
+		background #eff1f2
+		padding 10px 12px
+		font-size 16px
+		text-transform uppercase
+		font-weight bold
+		border 1px solid #fff
+		text-align center
+		border-right none
+		border-left none
+	&__text
+		border-top 1px solid #cbcecf
+		padding 15px 12px
+		line-height 1.2
+		p
+			padding-top 5px
+			font-size 12px
+	img
+		float: left;
+		margin-right: 10px;
+		height: 45px;
+		margin-bottom: 9px;
+		margin-top: 5px;
+	&__links
+		padding 10px 12px 12px 12px
+		line-height 1.8
+		a
+			color color_1
+			font-size: 12px
+			text-decoration: underline;
+			margin-right: 5px;
+.listing-filter-box
+	padding 10px 12px
+	border-bottom 1px solid #e0e0e0
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	align-content: stretch
+	&__filer
+		position relative
+		background #ffd61e
+		border-radius 3px
+		a
+			display block
+			height 100%
+			color #000
+			font-weight bold
+			text-transform uppercase
+			font-size 14px
+			padding 10px 20px
+	&__sidebar
+		position relative
+		border-radius 3px
+		a
+			display block
+			retinaSprite($filter_ico_group)
+	&__sort
+		position relative
+		text-align: right
+		flex: 1
+		a
+			margin-left 10px
+			display inline-block
+			opacity 0.2
+			&.active
+				opacity 1
+	&__sort-list
+		retinaSprite($sort_ico_inline_desc_group)
+	&__sort-small
+		retinaSprite($sort_ico_line_group)
+	&__sort-grid
+		retinaSprite($sort_ico_grid_group)
+	a.sidebar-link
+		display block
+		retinaSprite($filter_ico_group)

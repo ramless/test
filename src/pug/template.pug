@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+	meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+	meta(charset='UTF-8')
+	meta(name="robots" content="noindex")
+	title Ridex
+	link(href='../css/main-gulp.css', rel='stylesheet' type='text/css')
+	body
+		#wraper
+			//- Header
+			include header/header
+			//- Contant Page
+			block content_page
+			//- Footer
+			include footer/footer
+	script(src='https://code.jquery.com/jquery-1.11.0.js')
+	script(src='../js/main.js')

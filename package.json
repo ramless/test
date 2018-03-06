@@ -1,0 +1,30 @@
+{
+  "name": "beavis",
+  "version": "1.0.0",
+  "description": "new project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.6",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.3.2",
+    "autoprefixer-stylus": "*",
+    "gulp-csso": "*",
+    "gulp-filter": "^4.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-stylus": "^2.6.0",
+    "nib": "^1.1.2",
+    "yellfy-pug-inheritance": "^1.1.4"
+  },
+  "dependencies": {
+    "gulp-stylus": "^2.6.0",
+    "gulp.spritesmith": "^6.5.0"
+  }
+}
